@@ -1,0 +1,20 @@
+# Example local config — copy to config/endpoints.local.yaml (gitignored)
+# and fill in real hostnames/IPs/ports for your network.
+# This file is committed with placeholder values only.
+
+endpoints:
+  speechcheck:
+    # Mac Mini HTTP service for Korean pronunciation checking.
+    # NOT a general transcription endpoint — do not point aircheck
+    # transcription at it.
+    url: "http://<mac-mini-host>:<port>"
+  inference:
+    # Local llama.cpp server (5090 or similar).
+    base_url: "http://<infer-host>:<port>/v1"
+  whisper:
+    # Whisper / faster-whisper backend for aircheck transcription.
+    # local = run in-venv on this box (recommended); api = hosted endpoint
+    kind: "local"
+    # Backend-specific settings below (ignored when kind=local):
+    # url: "http://<whisper-host>:<port>"
+    # model: "whisper-large-v3-turbo"
