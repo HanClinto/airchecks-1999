@@ -172,6 +172,23 @@ quality:
 - Storage: annotations are text-first (YAML), indexed via git. SQLite index
   optional.
 
+
+## Defaults chosen pending user confirmation (2026-11-25)
+
+The user has not yet answered the scope/visibility/remote/transcription
+questions. Non-blocking defaults:
+
+- Primary scope: **year:1999 exact (244 audio)**. Broader text:1999 set
+  (~346-374) remains indexed under `scope_bucket: 1999_broad` for deferred
+  expansion.
+- Repo visibility: **private**. Do not create a public repo without
+  explicit confirmation.
+- GitHub remote: **not created yet** — `gh` is unauthenticated. Will create
+  + push only after `gh auth login` (or a provided token).
+- Transcription: deferred. No faster-whisper/librosa/torch installed yet;
+  first build will set up a small venv (or point at the 5090).
+- No archive.org comment posting from this session.
+
 ## What's missing from the raw corpus (be honest about)
 
 - **No Will Smith "Wild Wild West" hit in 1999 audio.** Likely either
