@@ -14,6 +14,23 @@ personalities, contests, commercials, events, and exclusive music.
 - Repo initialized; initial index in `data/airchecks-1999-candidates.json`.
 - See `docs/PROJECT.md` for project framing, schema, methodology, gates.
 
+
+## Handoffs and workflows
+
+Each remaining task has a dedicated handoff document in `docs/handoffs/`.
+The parallel-workflow map, sequencing, and priorities are in
+`docs/ROADMAP.md`. See that file for the current state and exit criteria.
+
+## Status (as of 2026-11-25)
+
+- Repo: public at https://github.com/HanClinto/airchecks-1999
+- Scope: 1999 audio samples from `airchecks` collection (244 exact + broad
+  text:1999 set, both indexed) — pending user confirmation
+- Candidate index: `data/airchecks-1999-candidates.json` (244 items)
+- Transcription: not run yet (no faster-whisper/librosa/torch installed)
+- Annotations: none yet
+- Crossposting: gated on human review (no auto-posting)
+
 ## Risks at a glance
 
 - 1999-exact vs broad 1999 is a real scope ambiguity (see
